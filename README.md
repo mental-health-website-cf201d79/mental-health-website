@@ -1,6 +1,6 @@
 # Mental-health-website
 ## Wire Frame
-- <placeholder for img>
+- [Wire Frame](assets/wireframe2.JPG)
 
 ## User Stories
 
