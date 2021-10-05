@@ -153,3 +153,24 @@ main section div div {
     width: 50%;
     font-size: 18pt;
 }
+#resource-group p{
+font-size: small;
+}
+#resource-1 img{
+    width: 220px;
+}
+
+#video-section{
+margin:auto;
+padding-left: 11%;
+}
+
+#video-section div{
+    padding-top: 5px;
+    border-top: black solid 1px;
+}
+
+#video-section h2{
+    text-align: center;
+    padding-top: 0px;
+}
