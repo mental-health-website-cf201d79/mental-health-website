@@ -21,12 +21,24 @@ function Question(question, questionCategory, responseOptions) {
 
 // Temporary question object.
 let question1 = new Question("What is your favorite color?", "Depression", [0,1,2,3])
+let questionObjects = [];
+questionObjects.push(question1);
 askQuestion(question1);
 
 // Function to display one question on webpage.
 function askQuestion(questionObject) {
-    // Display question on page.
+    // Add question title to page.
     let mainEl = document.getElementsByTagName("main")[0];
+    let questionTitle = document.createElement("p");
+    for (let i = 0; i < questionObjects.length; i++) {
+        if (questionObjects[i].question == questionObject.question) {
+            questionTitle.innerText = `Question ${i+1} of ${questionObjects.length}`;
+            break;
+        }
+    }
+    mainEl.appendChild(questionTitle);
+
+    // Display question on page.
     let questionEl = document.createElement("p");
     questionEl.innerText = questionObject.question;
     mainEl.appendChild(questionEl);
