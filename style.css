@@ -79,6 +79,10 @@ footer {
     bottom: 0;
 }
 
+footer p {
+    padding-top: 10px;
+}
+
 main h1 {
     color: #FF4665;
     font-family: 'Roboto', sans-serif;
