@@ -1,5 +1,147 @@
 @import url("reset.css");
 
-header div, header ul, header nav, nav li {
+/* https://fonts.google.com/specimen/Roboto?category=Sans+Serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* https://stackoverflow.com/a/16120671 */
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header, footer {
+    background-color: #D7DADE;
+    width: 100%;
+    min-height: 25pt;
+    color: #4D4D52;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #BABCC2;
+    
+    /* https://shadows.brumm.af */
+    box-shadow:
+        0px 0.1px 0.7px rgba(0, 0, 0, 0.02),
+        0px 0.3px 1.7px rgba(0, 0, 0, 0.028),
+        0px 0.6px 3.3px rgba(0, 0, 0, 0.035),
+        0px 1.1px 5.8px rgba(0, 0, 0, 0.042),
+        0px 2.1px 10.9px rgba(0, 0, 0, 0.05),
+        0px 5px 26px rgba(0, 0, 0, 0.07);
+}
+
+header * {
     display: inline-block;
 }
+
+header h1 {
+    font-size: x-large;
+    vertical-align: middle;
+}
+
+header nav {
+    font-size: larger;
+    vertical-align: middle;
+    float: right;
+}
+
+header h1, header nav {
+    margin: 12pt 20pt;
+}
+
+header nav a {
+    vertical-align: middle;
+    text-decoration: none;
+    color: #4D4D52;
+    margin: 0 10pt;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+header nav a:hover {
+    color: #FF4665;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+main {
+    width: 960px;
+    padding: 20pt;
+    margin: auto;
+}
+ 
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+}
+
+main h1 {
+    color: #FF4665;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30pt;
+    margin: 20pt 0pt;
+}
+
+main h2, main h3 {
+    color: #73737A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+}
+
+main h3 {
+    font-size: 18pt;
+    text-align: center;
+}
+
+section {
+    background-color: #EDF2F5;
+
+    /* https://shadows.brumm.af */
+    box-shadow:
+        0px 0.1px 0.7px rgba(0, 0, 0, 0.008),
+        0px 0.3px 1.7px rgba(0, 0, 0, 0.012),
+        0px 0.6px 3.3px rgba(0, 0, 0, 0.015),
+        0px 1.1px 5.8px rgba(0, 0, 0, 0.018),
+        0px 2.1px 10.9px rgba(0, 0, 0, 0.022),
+        0px 5px 26px rgba(0, 0, 0, 0.03);
+    border: 1px solid #E1E4E8;
+    margin: 30pt 0pt;
+}
+
+main img, main div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15pt;
+}
+
+main p {
+    color: #73737A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+    display: inline-block;
+    text-align: center;
+    width: 100pt;
+    padding: 10pt 0pt;
+    margin-right: 10pt;
+    margin-top: 10pt;
+    background-color: #BABCC2;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+main p:hover {
+    background-color: #FF4665;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+main section div div {
+    width: max-content;
+    margin: auto;
+}
+
