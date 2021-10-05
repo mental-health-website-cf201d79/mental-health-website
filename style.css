@@ -156,14 +156,8 @@ main section div div {
 #resource-group p{
 font-size: small;
 }
-#resource-1 img{
-    width: 220px;
-}
-#wa211 {
-    width: 350px;
-}
-#crisis-connections {
-    width: 350px;
+.resource img{
+    width: 250px;
 }
 
 #video-section{
