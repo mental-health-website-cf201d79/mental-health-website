@@ -84,7 +84,6 @@ main h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 30pt;
     margin: 20pt 0pt;
-    text-align: center;
 }
 
 main h2, main h3 {
@@ -113,7 +112,7 @@ section {
     margin: 30pt 0pt;
 }
 
-main img, main div {
+main img, main video, main div {
     display: inline-block;
     vertical-align: middle;
     padding: 15pt;
@@ -146,6 +145,7 @@ main section div div {
     margin: auto;
 }
 
-main section h2 {
-    text-align: center;
+.resource-p {
+    width: 50%;
+    font-size: 18pt;
 }
