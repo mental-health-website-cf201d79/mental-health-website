@@ -174,3 +174,7 @@ padding-left: 11%;
     text-align: center;
     padding-top: 0px;
 }
+
+a {
+    text-decoration: none;
+}
