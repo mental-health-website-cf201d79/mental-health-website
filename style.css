@@ -101,21 +101,18 @@ main h1 {
     color: #FF4665;
     font-family: 'Roboto', sans-serif;
     font-size: 30pt;
-    margin: 0pt 0pt;
 }
 
 main h2 {
     color: #73737A;
     font-family: 'Roboto', sans-serif;
     font-size: 20pt;
-    margin: 0pt 0pt;
 }
 
 main h3 {
     color: #73737A;
     font-family: 'Roboto', sans-serif;
     font-size: 18pt;
-    margin: 0pt 0pt;
 }
 
 main a {
@@ -129,14 +126,12 @@ main p {
     font-size: 18pt;
     display: inline-block;
     vertical-align: middle;
-    padding: 15pt;
 }
 
 main ul {
     color: #73737A;
     font-size: 18pt;
     display: block;
-    padding: 15pt;
 }
 
 main img, main div {
@@ -170,13 +165,15 @@ main .button:hover {
     transition-duration: 0.5s;
 }
 
-main #video-section {
+main .video-section {
     text-align: center;
 }
 
-main #video-section video {
+main .video-section video {
     display: block;
     margin: 15pt auto;
+    width: 700px;
+    height: 400px;
 }
 
 main .resource img {
