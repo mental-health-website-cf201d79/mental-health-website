@@ -108,25 +108,45 @@ function getResults() {
 
     console.log(questionCategories);
     console.log(sumOfEachCategory);
-
+    showResults(questionCategories, sumOfEachCategory)
     // Goal is to get array of questionCategories.
     // 2nd goal is to get array of scores for each question category (sumOfEachCategory).
 }
 
 // Displays results chart.
-function showResults() {
-
+function showResults(x, y) {
+    
+    console.log("hi")        
+    let mainEl = document.getElementsByTagName("main")[0]
+    mainEl.innerText = ""
+    let canvasEl = document.createElement("canvas")
+    mainEl.appendChild(canvasEl)
+    let ctx = canvasEl.getContext("2d")
+    
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: x,
+            datasets: [{
+                label: 'Questionnaire Results',
+                data: y,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
 }
 
-// Temporary question object.
-let question1 = new Question("What is your favorite color?", "Depression", ["Not likely","Sometimes","Never","Occasionally"], [0, 5, 10, 15])
-let question2 = new Question("What is your favorite color2?", "Depression2", [5,6,7,8], [0, 6, 11, 16])
 
-let questionObjects = [];
 
-for (let i = 0; i < question.length; i++) {
-    questionObjects.push(question)
-}
 
 // Question bank and associated arrays to build question objects out of.
 QuestionCategory = ['Depression','Depression','Depression','Generalized Anxiety','Generalized Anxiety','Social Anxiety','Social Anxiety','Social Anxiety','Social Anxiety','Social Anxiety','ADHD','ADHD','ADHD','ADHD','ADHD','ADHD','Gender Dysphoria','Gender Dysphoria','Gender Dysphoria','Gender Dysphoria','Gender Dysphoria','PTSD','PTSD','PTSD']
@@ -134,6 +154,12 @@ Questions = ['Little interest or pleasure in doing things','Feeling down, depres
 ResponseOptions = [['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Slightly','Moderately','Very','Extremely'],['Not at all','Slightly','Moderately','Very','Extremely'],['Not at all','Slightly','Moderately','Very','Extremely'],['Not at all','Slightly','Moderately','Very','Extremely'],['Not at all','Slightly','Moderately','Very','Extremely'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely']]
 ScoringKey = [[0,1,2,3],[0,1,2,3],[0,1,2,3],[0,1,2,3],[0,1,2,3],[0,1,2,3,4],[4,3,2,1,0],[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4],[0,0,1,1,1],[0,0,1,1,1],[0,0,1,1,1],[0,0,0,1,1],[0,0,0,1,1],[0,0,0,1,1],[0,0,0,1,2],[0,0,0,1,2],[0,0,0,1,2],[0,0,0,1,2],[0,0,0,1,2],[0,0,0,1,2],[0,0,0,1,2],[0,0,0,1,2]]
 
+let questionObjects = [];
+
+for (let i = 0; i < Questions.length; i++) {
+    let tempObj = new Question(Questions[i], QuestionCategory[i], ResponseOptions[i], ScoringKey[i])
+    questionObjects.push(tempObj)
+}
 
 // Keep track of which questions have already been asked.
 let questionsAlreadyAsked = [];
