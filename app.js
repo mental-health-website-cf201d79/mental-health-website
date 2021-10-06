@@ -163,4 +163,4 @@ for (let i = 0; i < Questions.length; i++) {
 
 // Keep track of which questions have already been asked.
 let questionsAlreadyAsked = [];
-askNextQuestion();
+document.getElementById("yes").addEventListener("click", askNextQuestion);

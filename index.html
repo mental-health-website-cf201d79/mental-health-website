@@ -3,6 +3,7 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
     </head>
 
     <body>
@@ -11,20 +12,20 @@
                 <h1>Mental Health Awareness</h1>
             </div>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="questionnaire.html">Questionnaire</a>
+                <a href="index.html">Questionnaire</a>
                 <a href="stats.html">Statistics</a>
                 <a href="resources.html">Resources</a>
             </nav>
         </header>
 
         <main>
+            <!-- Content below is erased when questionnaire is run in app.js. -->
             <section>
                 <img src="https://via.placeholder.com/350x300.png">
                 <div>
                     <h1>Mental Health Screening Test</h1>
                     <h2>Would you like to participate?</h2>
-                    <p class="button">Yes</p><p class="button">No</p>
+                    <p class="button" id="yes">Yes</p>
                 </div>
             </section>
             <h3>You are not alone</h3>
@@ -34,6 +35,7 @@
             <p>This information is not a diagnosis of any condition. Created for CodeFellows 201d79. Chloe Nott, Brandon Wolf, Ibraheem Ibraheem</p>
         </footer>
 
+        <script src="app.js"></script>
     </body>
 
 </html>
