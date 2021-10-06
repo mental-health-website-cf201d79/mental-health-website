@@ -55,8 +55,13 @@ function handleResponse(event) {
             break;
         }
     }
-    // Ask next question.
-    askNextQuestion();
+    // Ask next question if questions are left to be asked. Otherwise, get results.
+    if (questionsAlreadyAsked.length == questionObjects.length) {
+        document.getElementsByTagName("ul")[0].removeEventListener("click", handleResponse);
+        getResults();
+    } else {
+        askNextQuestion();
+    }
 }
 
 function askNextQuestion() {
@@ -72,9 +77,8 @@ function askNextQuestion() {
             break;
         }
     }
-    getResults();
 }
-t 
+ 
 // Calculates results of user responses into format results chart can use.
 function getResults() {
 
@@ -110,12 +114,19 @@ function getResults() {
 }
 
 // Displays results chart.
-function showResults() {}
+function showResults() {
+
+}
 
 // Temporary question object.
 let question1 = new Question("What is your favorite color?", "Depression", ["Not likely","Sometimes","Never","Occasionally"], [0, 5, 10, 15])
 let question2 = new Question("What is your favorite color2?", "Depression2", [5,6,7,8], [0, 6, 11, 16])
-let questionObjects = [question1, question2];
+
+let questionObjects = [];
+
+for (let i = 0; i < question.length; i++) {
+    questionObjects.push(question)
+}
 
 
 // Keep track of which questions have already been asked.
