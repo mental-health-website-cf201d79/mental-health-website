@@ -16,7 +16,7 @@ body {
 }
 
 header, footer {
-    background-color: #D7DADE;
+    background-color: #adcdfaf3;
     width: 100%;
     color: #4D4D52;
     font-family: 'Roboto', sans-serif;
@@ -73,7 +73,7 @@ header nav a {
     transition-duration: 0.5s;
 }
 
-header nav a:hover {
+header nav a:hover, main li:hover{
     color: #FF4665;
     transition-property: color;
     transition-duration: 0.5s;
@@ -205,6 +205,7 @@ main .resource img {
 
 main li {
     list-style: circle;
+    margin: 10pt 0pt;
 }
 
 main li:hover {
@@ -213,4 +214,19 @@ main li:hover {
 
 #question {
     text-indent: 0pt;
+}
+
+#question, main ul {
+    animation: nextQuestion;
+    animation-duration: 0.25s;
+}
+
+@keyframes nextQuestion {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+canvas {
+    width: 400px;
+
 }
