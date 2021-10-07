@@ -85,6 +85,7 @@ footer p {
 footer section {
     width: 600px;
     margin: 20pt auto;
+    height: max-content;
 }
 
 main {
@@ -138,10 +139,12 @@ main a {
 main p {
     color: #73737A;
     font-family: 'Roboto', sans-serif;
-    font-size: 18pt;
+    font-size: 15pt;
     display: inline-block;
     vertical-align: middle;
     margin: 20pt 0pt;
+    text-indent: 20px;
+    
 }
 
 main ul {
