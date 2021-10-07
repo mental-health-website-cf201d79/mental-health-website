@@ -38,8 +38,9 @@ header {
 }
 
 footer {
-    min-height: 300pt;
+    max-height: max-content;
     overflow-y: hidden;
+    position: fixed;
     text-align: center;
     bottom: 0;
 }
@@ -151,6 +152,7 @@ main ul {
     color: #73737A;
     font-size: 18pt;
     display: block;
+    margin:0pt 40pt;
 }
 
 main img, main div {
@@ -176,6 +178,7 @@ main .button {
     color: white;
     transition-property: background-color;
     transition-duration: 0.5s;
+    text-indent: 0px;
 }
 
 main .button:hover {
@@ -198,4 +201,16 @@ main .video-section video {
 main .resource img {
     max-width: 250px;
     max-height: 150px;
+}
+
+main li {
+    list-style: circle;
+}
+
+main li:hover {
+    list-style: disc;
+}
+
+#question {
+    text-indent: 0pt;
 }

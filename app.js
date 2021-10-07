@@ -26,6 +26,7 @@ function askQuestion(questionObject) {
     // Display question on page.
     let questionEl = document.createElement("p");
     questionEl.innerText = questionObject.question;
+    questionEl.setAttribute("id", "question");
     mainEl.appendChild(questionEl);
 
     // Display answer choices on page.
