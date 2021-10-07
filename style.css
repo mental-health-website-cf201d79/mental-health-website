@@ -40,6 +40,8 @@ header {
 footer {
     min-height: 300pt;
     overflow-y: hidden;
+    text-align: center;
+    bottom: 0;
 }
 
 header * {
@@ -76,14 +78,13 @@ header nav a:hover {
     transition-duration: 0.5s;
 }
 
-footer {
-    /* position: fixed; */
-    text-align: center;
-    bottom: 0;
+footer p {
+    padding: 10pt 0pt;
 }
 
-footer p {
-    padding-top: 10px;
+footer section {
+    width: 600px;
+    margin: 20pt auto;
 }
 
 main {
@@ -93,11 +94,11 @@ main {
 }
 
 main section {
-    background-color: #EDF2F5;
+    background-color: #FFFFFF;
     display: block;
     border: 1px solid #E1E4E8;
-    padding: 10pt 10pt;
-    margin: 30pt 0pt;
+    padding: 20pt 30pt;
+    margin: 20pt 0pt;
     box-shadow: /* https://shadows.brumm.af */
     0px 0.1px 0.7px rgba(0, 0, 0, 0.008),
     0px 0.3px 1.7px rgba(0, 0, 0, 0.012),
@@ -105,6 +106,7 @@ main section {
     0px 1.1px 5.8px rgba(0, 0, 0, 0.018),
     0px 2.1px 10.9px rgba(0, 0, 0, 0.022),
     0px 5px 26px rgba(0, 0, 0, 0.03);
+    border-radius: 20pt;
 }
 
 main h1 {
@@ -139,7 +141,7 @@ main p {
     font-size: 18pt;
     display: inline-block;
     vertical-align: middle;
-    margin: 10pt 0pt;
+    margin: 20pt 0pt;
 }
 
 main ul {
