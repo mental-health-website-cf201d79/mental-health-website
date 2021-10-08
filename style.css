@@ -172,8 +172,9 @@ main p {
     text-indent: 0pt;
 }
 
-main p a {
+main p a, footer a {
     color: #6B88D1;
+    text-decoration: none;
 }
 
 main ul {
