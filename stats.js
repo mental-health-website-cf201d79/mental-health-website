@@ -11,7 +11,15 @@ let prevalenceChart = new Chart(document.getElementById("prevalence-chart").getC
         }]
     },
     options: {
-        responsive: true
+        responsive: true,
+        scales: {
+            y: {
+                title: {
+                    display: true,
+                    text: '% of Population'
+                }
+            }
+        }
     }
 });
 
@@ -28,7 +36,15 @@ let recievedCareChart = new Chart(document.getElementById("recieved-care-chart")
         }]
     },
     options: {
-        responsive: true
+        responsive: true,
+        scales: {
+            y: {
+                title: {
+                    display: true,
+                    text: '% of Population with Condition'
+                }
+            }
+        }
     }
 });
 
@@ -52,7 +68,15 @@ let symptomsAnxietyDepression = new Chart(document.getElementById("symptoms-anxi
         }]
     },
     options: {
-        responsive: true
+        responsive: true,
+        scales: {
+            y: {
+                title: {
+                    display: true,
+                    text: '% of Population'
+                }
+            }
+        }
     }
 });
 
@@ -78,7 +102,13 @@ let suicideRates = new Chart(document.getElementById("suicide-rates").getContext
     options: {
         responsive: true,
         scales: {
-            y:{beginAtZero:true}
+            y: {
+                beginAtZero:true,
+                title: {
+                    display: true,
+                    text: 'Rate per 100,000 people'
+                }
+            }
         }
     }
 });
@@ -103,6 +133,14 @@ let adhdPrevalence = new Chart(document.getElementById("adhd-prevalence").getCon
         }]
     },
     options: {
-        responsive: true
+        responsive: true,
+        scales: {
+            y: {
+                title: {
+                    display: true,
+                    text: '% of Population'
+                }
+            }
+        }
     }
 });

@@ -100,9 +100,9 @@ main {
 }
 
 main section {
-    background-color: #FFFFFF;
+    background-color: none;
     display: block;
-    border: 1px solid #E1E4E8;
+    border: 0px solid #E1E4E8;
     padding: 15pt 20pt;
     margin: 20pt 0pt;
     box-shadow: /* https://shadows.brumm.af */
@@ -112,7 +112,7 @@ main section {
     0px 1.1px 5.8px rgba(0, 0, 0, 0.018),
     0px 2.1px 10.9px rgba(0, 0, 0, 0.022),
     0px 5px 26px rgba(0, 0, 0, 0.03);
-    border-radius: 20pt;
+    border-radius: 0pt;
 }
 
 main h1 {
@@ -256,7 +256,7 @@ main li:hover {
     display: block;
     height: 300px;
     max-width: 80%;
-    margin: 0 auto 30pt auto;
+    margin: 0 auto 40pt auto;
 }
 
 #figure-container {
@@ -279,6 +279,7 @@ figure {
 
 figure a {
     text-align: left;
+    padding-left: 10pt;
     color: #5D76C2;
     display: block;
 }
@@ -323,7 +324,7 @@ figure figcaption {
 
 .resource {
     display: inline-block;
-    width: 250px;
+    width: 249px;
     height: 350px;
     vertical-align: top;
     border-radius: 0;
@@ -364,4 +365,14 @@ figure figcaption {
     width: 436px;
     vertical-align: top;
     padding: 0pt 15pt;
+}
+
+#credit-p {
+    text-align: left;
+    text-indent: 0;
+    display: block;
+    width: 750px;
+    margin: auto;
+    margin-top: 90px;
+    font-size: 13pt;
 }
