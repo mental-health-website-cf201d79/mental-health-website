@@ -158,6 +158,7 @@ let ptsdChart = new Chart(document.getElementById("ptsd-prevalence").getContext(
     data: {
         labels: ['Overall','Female','Male','18-29','30-44','45-59','60+'],
         datasets: [{
+            label: 'Adults With PTSD',
             data: [3.6,5.2,1.8,4.0,3.5,5.3,1.0],
             backgroundColor: [
                 '#6B88D1',
