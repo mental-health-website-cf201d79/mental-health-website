@@ -397,4 +397,5 @@ figure figcaption {
 main .home-cards {
     display: inline-block;
     width: 437px;
+    vertical-align: top;
 }
