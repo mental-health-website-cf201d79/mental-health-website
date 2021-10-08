@@ -228,6 +228,8 @@ main .resource img {
 
 main li {
     list-style: circle;
+    font-size: 16pt;
+    font-family: 'Roboto', sans-serif;
     padding: 5pt 0pt;
     cursor: pointer;
     user-select: none;
@@ -240,6 +242,7 @@ main li:hover {
 
 #question {
     text-indent: 0pt;
+    font-size: 16pt;
 }
 
 #question, main ul {
