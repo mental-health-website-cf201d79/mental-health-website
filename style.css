@@ -40,13 +40,16 @@ header {
 footer {
     max-height: max-content;
     overflow-y: hidden;
-    position: fixed;
     text-align: center;
     bottom: 0;
 }
 
 header * {
     display: inline-block;
+}
+
+#chart-h1 {
+    text-align: center;
 }
 
 header h1 {
@@ -123,6 +126,7 @@ main h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 20pt;
     margin: 10pt 0pt;
+    text-align: center;
 }
 
 main h3 {
@@ -135,6 +139,12 @@ main h3 {
 main a {
     text-decoration: none;
     color: #73737A;
+}
+
+cite {
+    font-size: 12pt;
+    color: #BABCC2;
+    font-family: 'Roboto', sans-serif;
 }
 
 main p {
@@ -184,7 +194,7 @@ main .button {
 main .button:hover {
     background-color: #FF4665;
     transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.25s;
 }
 
 main .video-section {
@@ -206,6 +216,8 @@ main .resource img {
 main li {
     list-style: circle;
     margin: 10pt 0pt;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 main li:hover {
@@ -226,6 +238,62 @@ main li:hover {
     to {opacity: 1;}
 }
 
-canvas {
-    width: 400px;
+.chart-divs {
+    display: block;
+    height: 300px;
+    max-width: 80%;
+    margin: 0 auto 30pt auto;
+}
+
+#figure-container {
+    width: 960px;
+    display: block;
+    margin: auto;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote */
+figure {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20pt;
+    width: 265px;
+    font-size: 16pt;
+    color: #73737A;
+    height: max-content;
+    font-family: 'Roboto', sans-serif;
+}
+
+figure a {
+    text-align: left;
+    color: blue;
+    display: block;
+}
+
+figure a:hover {
+    color: #FF4665;
+    transition-property: color;
+    text-decoration: underline;
+}
+
+figure blockquote {
+    padding: 15px;
+    text-align: left;
+    font-size: 15pt;
+    margin: 10pt 0pt;
+    background: #EEE;
+    border-radius: 5px;
+}
+
+figure blockquote::before {
+    content: '\201C';
+}
+
+figure blockquote::after {
+    content: '\201D';
+}
+
+figure figcaption {
+ font-size: 15pt;
+ font-weight: 500;
+ text-align: center;
 }
