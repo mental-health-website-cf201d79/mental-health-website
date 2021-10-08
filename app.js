@@ -208,12 +208,6 @@ Questions = ['Little interest or pleasure in doing things','Feeling down, depres
 ResponseOptions = [['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Several days','More than half the days','Nearly every day'],['Not at all','Slightly','Moderately','Very','Extremely'],['Not at all','Slightly','Moderately','Very','Extremely'],['Not at all','Slightly','Moderately','Very','Extremely'],['Not at all','Slightly','Moderately','Very','Extremely'],['Not at all','Slightly','Moderately','Very','Extremely'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Never','Rarely','Sometimes','Often','Very Often'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely'],['Disagree completely','Disagree','Neither agree nor disagree','Agree','Agree completely']]
 ScoringKey = [[0,11.11,22.22,33.33],[0,11.11,22.22,33.33],[0,11.11,22.22,33.33],[0,16.67,33.33,50],[0,16.67,33.33,50],[0,5,10,15,20],[20,15,10,5,0],[0,5,10,15,20],[0,5,10,15,20],[0,5,10,15,20],[0,0,16.67,16.67,16.67],[0,0,16.67,16.67,16.67],[0,0,16.67,16.67,16.67],[0,0,0,16.67,16.67],[0,0,0,16.67,16.67],[0,0,0,16.67,16.67],[0,0,0,10,20],[0,0,0,10,20],[0,0,0,10,20],[0,0,0,10,20],[0,0,0,10,20],[0,0,0,16.67,33.33],[0,0,0,16.67,33.33],[0,0,0,16.67,33.33]]
 
-QuestionCategory = ['hi']
-Questions = ['hi']
-ResponseOptions = [['hi']]
-scoringkey = [[1]]
-
-
 let questionObjects = [];
 
 for (let i = 0; i < Questions.length; i++) {

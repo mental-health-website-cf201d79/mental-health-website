@@ -216,6 +216,7 @@ main .resource img {
 main li {
     list-style: circle;
     margin: 10pt 0pt;
+    cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
 }
