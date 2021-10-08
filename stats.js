@@ -152,3 +152,30 @@ let adhdPrevalence = new Chart(document.getElementById("adhd-prevalence").getCon
         }
     }
 });
+
+let ptsdChart = new Chart(document.getElementById("ptsd-prevalence").getContext("2d"), {
+    type: 'bar',
+    data: {
+        labels: ['Overall','Female','Male','18-29','30-44','45-59','60+'],
+        datasets: [{
+            data: [3.6,5.2,1.8,4.0,3.5,5.3,1.0],
+            backgroundColor: [
+                '#6B88D1',
+                '#939DB8','#939DB8',
+                '#6A7285','#6A7285','#6A7285','#6A7285'
+            ],
+            hoverOffset: 4
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                title: {
+                    display: true,
+                    text: '% of Population with Condition'
+                }
+            }
+        }
+    }
+});
