@@ -399,3 +399,15 @@ main .home-cards {
     width: 437px;
     vertical-align: top;
 }
+
+#zombo {
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transition-property: opacity;
+}
+
+#zombo:hover {
+    opacity: 1;
+}

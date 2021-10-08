@@ -174,7 +174,7 @@ let ptsdChart = new Chart(document.getElementById("ptsd-prevalence").getContext(
             y: {
                 title: {
                     display: true,
-                    text: '% of Population with Condition'
+                    text: '% of Population'
                 }
             }
         }
