@@ -11,6 +11,8 @@ function Question(question, questionCategory, responseOptions, responseOptionSco
 function askQuestion(questionObject) {
 
     // Clear page.
+    let bannerEl = document.getElementById("banner-image");
+    bannerEl.innerText = "";
     let mainEl = document.getElementsByTagName("main")[0];
     mainEl.innerText = "";
 
@@ -120,11 +122,19 @@ function showResults(x, y) {
     
     // Adds results chart to webpage.
     let mainEl = document.getElementsByTagName("main")[0]
-    mainEl.innerText = ""
-    let canvasEl = document.createElement("canvas")
-    mainEl.appendChild(canvasEl)
-    let ctx = canvasEl.getContext("2d")
+    mainEl.innerText = "";
+
+    // Put canvas in a div container to be able to resize with css easily.
+    let canvasContainer = document.createElement("div");
+    canvasContainer.setAttribute("class","chart-divs");
+    mainEl.appendChild(canvasContainer);
+
+    // Create canvas to put chart onto.
+    let canvasEl = document.createElement("canvas");
+    canvasContainer.appendChild(canvasEl);
+    let ctx = canvasEl.getContext("2d");
     
+    // Create chart.
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {

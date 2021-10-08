@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 /* https://stackoverflow.com/a/16120671 */
+/* https://www.pexels.com/photo/person-in-black-pants-and-black-shoes-sitting-on-brown-wooden-chair-4101143/ */
 body {
     position: absolute;
     top: 0;
@@ -16,27 +17,28 @@ body {
 }
 
 header, footer {
-    background-color: #424652;
     width: 100%;
-    color: white;
     font-family: 'Roboto', sans-serif;
-    
-    /* https://shadows.brumm.af */
-    box-shadow:
-        0px 0.1px 0.7px rgba(0, 0, 0, 0.02),
-        0px 0.3px 1.7px rgba(0, 0, 0, 0.028),
-        0px 0.6px 3.3px rgba(0, 0, 0, 0.035),
-        0px 1.1px 5.8px rgba(0, 0, 0, 0.042),
-        0px 2.1px 10.9px rgba(0, 0, 0, 0.05),
-        0px 5px 26px rgba(0, 0, 0, 0.07);
 }
 
 header {
+    background: none;
+    color: #424652;
     position: sticky;
     top: 0;
+    /* https://shadows.brumm.af */
+    box-shadow:
+    0px 0.1px 0.7px rgba(0, 0, 0, 0.02),
+    0px 0.3px 1.7px rgba(0, 0, 0, 0.028),
+    0px 0.6px 3.3px rgba(0, 0, 0, 0.035),
+    0px 1.1px 5.8px rgba(0, 0, 0, 0.042),
+    0px 2.1px 10.9px rgba(0, 0, 0, 0.05),
+    0px 5px 26px rgba(0, 0, 0, 0.07);
 }
 
 footer {
+    background-color: #EFF2F4;
+    color:#51575C;
     max-height: max-content;
     overflow-y: hidden;
     text-align: center;
@@ -69,14 +71,14 @@ header h1, header nav {
 header nav a {
     vertical-align: middle;
     text-decoration: none;
-    color: white;
+    color: #424652;
     margin: 0 10pt;
     transition-property: color;
     transition-duration: 0.1s;
 }
 
 header nav a:hover, main li:hover{
-    color: #6B88D1;
+    color: #5D76C2;
     transition-property: color;
     transition-duration: 0.1s;
 }
@@ -101,7 +103,7 @@ main section {
     background-color: #FFFFFF;
     display: block;
     border: 1px solid #E1E4E8;
-    padding: 20pt 30pt;
+    padding: 15pt 20pt;
     margin: 20pt 0pt;
     box-shadow: /* https://shadows.brumm.af */
     0px 0.1px 0.7px rgba(0, 0, 0, 0.008),
@@ -140,6 +142,11 @@ main a {
     color: #73737A;
 }
 
+main a:hover {
+    text-decoration: underline;
+    color: #5D76C2;
+}
+
 cite {
     font-size: 12pt;
     color: #BABCC2;
@@ -153,8 +160,7 @@ main p {
     display: inline-block;
     vertical-align: middle;
     margin: 20pt 0pt;
-    text-indent: 20px;
-    
+    text-indent: 20pt;
 }
 
 main ul {
@@ -180,20 +186,19 @@ main .button {
     display: inline-block;
     text-align: center;
     width: 100pt;
-    padding: 10pt 0pt;
-    margin-right: 10pt;
-    margin-top: 10pt;
+    padding: 12pt 0pt;
+    margin: 10pt 10pt;
     background-color: #BABCC2;
     color: white;
     transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
     text-indent: 0px;
 }
 
 main .button:hover {
     background-color: #6B88D1;
     transition-property: background-color;
-    transition-duration: 0.25s;
+    transition-duration: 0.1s;
 }
 
 main .video-section {
@@ -214,7 +219,7 @@ main .resource img {
 
 main li {
     list-style: circle;
-    margin: 10pt 0pt;
+    padding: 5pt 0pt;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
@@ -265,12 +270,12 @@ figure {
 
 figure a {
     text-align: left;
-    color: blue;
+    color: #5D76C2;
     display: block;
 }
 
 figure a:hover {
-    color: #6B88D1;
+    color: #7596F5;
     transition-property: color;
     text-decoration: underline;
 }
@@ -296,4 +301,34 @@ figure figcaption {
  font-size: 15pt;
  font-weight: 500;
  text-align: center;
+}
+
+#banner-image {
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.2)), url("assets/banner-image.jpg");
+    background-size: cover;
+    background-size: 100%;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#quiz-box {
+    width: max-content;
+    margin: 50pt auto;
+    padding: 20pt 30pt;
+    border-radius: 20pt;
+    background-color: rgba(255,255,255,0.8);
+    border-width: 0px;
+    box-shadow: 0px 0px 0px;
+}
+
+#quiz-box-text {
+    text-align: left;
+}
+
+.long {
+    display: inline-block;
+    width: 436px;
+    vertical-align: top;
+    padding: 0pt 15pt;
 }
