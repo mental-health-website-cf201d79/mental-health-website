@@ -38,7 +38,7 @@ header {
 
 footer {
     background-color: #EFF2F4;
-    color:#51575C;
+    color:#73737A;
     max-height: max-content;
     overflow-y: hidden;
     text-align: center;
@@ -56,6 +56,7 @@ header * {
 header h1 {
     font-size: x-large;
     vertical-align: middle;
+    margin: 10pt 20pt 10pt 20pt;
 }
 
 header nav {
@@ -64,8 +65,8 @@ header nav {
     float: right;
 }
 
-header h1, header nav {
-    margin: 12pt 20pt;
+header nav {
+    margin: 15pt 20pt 5pt 20pt;
 }
 
 header nav a {
@@ -122,6 +123,11 @@ main h1 {
     margin: 10pt 0pt;
 }
 
+header h1::first-letter {
+    color: #6B88D1;
+    font-size: 21pt;
+}
+
 main h2 {
     color: #73737A;
     font-family: 'Roboto', sans-serif;
@@ -149,7 +155,10 @@ main a:hover {
 
 cite {
     font-size: 12pt;
-    color: #BABCC2;
+    color: #8a8a94;
+    display: block;
+    width: 80%;
+    margin: auto;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -159,8 +168,12 @@ main p {
     font-size: 15pt;
     display: inline-block;
     vertical-align: middle;
-    margin: 20pt 0pt;
-    text-indent: 20pt;
+    margin: 10pt 0pt;
+    text-indent: 0pt;
+}
+
+main p a {
+    color: #6B88D1;
 }
 
 main ul {
@@ -353,7 +366,7 @@ figure figcaption {
     width: max-content;
     margin: 50pt auto;
     padding: 20pt 30pt;
-    border-radius: 20pt;
+    border-radius: 0pt;
     background-color: rgba(255,255,255,0.8);
     border-width: 0px;
     box-shadow: 0px 0px 0px;
@@ -378,4 +391,9 @@ figure figcaption {
     margin: auto;
     margin-top: 90px;
     font-size: 13pt;
+}
+
+main .home-cards {
+    display: inline-block;
+    width: 437px;
 }
