@@ -121,8 +121,14 @@ function getResults() {
 function showResults(x, y) {
     
     // Adds results chart to webpage.
-    let mainEl = document.getElementsByTagName("main")[0]
+    let mainEl = document.getElementsByTagName("main")[0];
     mainEl.innerText = "";
+
+    // Add title to page.
+    let titleEl = document.createElement("h1");
+    titleEl.innerText = "Questionnaire Results";
+    titleEl.setAttribute("id", "results-h1");
+    mainEl.appendChild(titleEl);
 
     // Put canvas in a div container to be able to resize with css easily.
     let canvasContainer = document.createElement("div");
@@ -140,7 +146,7 @@ function showResults(x, y) {
         data: {
             labels: x,
             datasets: [{
-                label: 'Questionnaire Results',
+                label: 'Score',
                 data: y,
                 backgroundColor: '#6B88D1'
             }]
