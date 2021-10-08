@@ -162,7 +162,7 @@ function showResults(x, y) {
     // Add references/attributions for sources used.
     let creditEl = document.createElement("p");
     creditEl.setAttribute("id","credit-p");
-    creditEl.innerText = `The questions used in this quiz are sourced from the PHQ-2, PHQ-9, GAD-2 (all copyright Pfizer, no permission to reproduce or distribute), Adult ADHD Self Report Scale V1.1 (copyright World Health Organization, use allowed with acknowledgement of copyright), and Utrecth Gender Dysphoria Scale - Gender Spectrum (copyrighted University of Minnesota, license for GALA expires Oct 5, 2024 under ID 6TJ7).`;
+    creditEl.innerText = `The questions in this quiz are sourced from the PHQ-2, PHQ-9, GAD-2 (all copyright Pfizer, no permission required to reproduce or distribute), Adult ADHD Self Report Scale V1.1 (copyright World Health Organization, use allowed with acknowledgement of copyright), and Utrecth Gender Dysphoria Scale - Gender Spectrum (copyrighted University of Minnesota, license for GALA expires Oct 5, 2024 under ID 6TJ7).`;
     mainEl.appendChild(creditEl);
 
     // Condition description information is stored in this object.
