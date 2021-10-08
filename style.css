@@ -16,11 +16,10 @@ body {
 }
 
 header, footer {
-    background-color: #adcdfaf3;
+    background-color: #424652;
     width: 100%;
-    color: #4D4D52;
+    color: white;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid #BABCC2;
     
     /* https://shadows.brumm.af */
     box-shadow:
@@ -70,16 +69,16 @@ header h1, header nav {
 header nav a {
     vertical-align: middle;
     text-decoration: none;
-    color: #4D4D52;
+    color: white;
     margin: 0 10pt;
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
 }
 
 header nav a:hover, main li:hover{
-    color: #FF4665;
+    color: #6B88D1;
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
 }
 
 footer p {
@@ -115,7 +114,7 @@ main section {
 }
 
 main h1 {
-    color: #FF4665;
+    color: #6B88D1;
     font-family: 'Roboto', sans-serif;
     font-size: 30pt;
     margin: 10pt 0pt;
@@ -192,7 +191,7 @@ main .button {
 }
 
 main .button:hover {
-    background-color: #FF4665;
+    background-color: #6B88D1;
     transition-property: background-color;
     transition-duration: 0.25s;
 }
@@ -271,7 +270,7 @@ figure a {
 }
 
 figure a:hover {
-    color: #FF4665;
+    color: #6B88D1;
     transition-property: color;
     text-decoration: underline;
 }

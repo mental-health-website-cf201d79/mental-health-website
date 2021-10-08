@@ -6,7 +6,7 @@ let prevalenceChart = new Chart(document.getElementById("prevalence-chart").getC
             label: 'Affected by Mental Health Illness',
             data: [26,20.6,24.5,16.3,29.4,25.0,14.0,18.0,22.2,17.3,14.4,16.6,18.7,31.7],
             backgroundColor: [
-                'rgb(255, 99, 132)'],
+                '#6B88D1'],
             hoverOffset: 4
         }]
     },
@@ -23,7 +23,7 @@ let recievedCareChart = new Chart(document.getElementById("recieved-care-chart")
             label: 'Recieved Care in Past Year',
             data: [44.8,49.7,36.8,38.9,45.4,47.2,33.9,50.3,32.9,23.3,43.0],
             backgroundColor: [
-                'rgb(255, 99, 132)'],
+                '#6B88D1'],
             hoverOffset: 4
         }]
     },
@@ -40,14 +40,14 @@ let symptomsAnxietyDepression = new Chart(document.getElementById("symptoms-anxi
             label: 'Aug 19-31, 2020',
             data: [36.4,49.0,42.5,37.6,34.9,29.3,23.2,19.4,31.8,40.7,40.2,35.4,37.7,30.5,43.1],
             backgroundColor: [
-                'rgb(255, 99, 132)'],
+                '#6B88D1'],
             hoverOffset: 4
         },
         {
             label: 'Jan 20-Feb 1, 2021',
             data: [41.5,57.0,45.9,41.1,41.2,33.4,26.3,22.5,38.0,44.8,47.1,39.8,44.5,37.4,44.8],
             backgroundColor: [
-                'rgb(150, 99, 132)'],
+                '#424652'],
             hoverOffset: 4
         }]
     },
@@ -64,14 +64,14 @@ let suicideRates = new Chart(document.getElementById("suicide-rates").getContext
             label: 'Female',
             data: [4.0,4.0,4.1,4.2,4.2,4.5,4.4,4.5,4.6,4.8,4.9,5.0,5.2,5.4,5.5,5.8],
             backgroundColor: [
-                'rgb(255, 99, 132)'],
+                '#6B88D1'],
             hoverOffset: 4
         },
         {
             label: 'Male',
             data: [17.8,17.7,18.2,18.5,18.1,18.1,18.1,18.1,18.5,19.0,19.2,19.8,20.0,20.4,20.3,20.7],
             backgroundColor: [
-                'rgb(150, 99, 132)'],
+                '#424652'],
             hoverOffset: 4
         }]
     },
@@ -91,14 +91,14 @@ let adhdPrevalence = new Chart(document.getElementById("adhd-prevalence").getCon
             label: 'Adolescents (13-18)',
             data: [8.7,4.2,13.0,8.5,8.9,9.3,5.6],
             backgroundColor: [
-                'rgb(255, 99, 132)'],
+                '#6B88D1'],
             hoverOffset: 4
         },
         {
             label: 'Adults',
             data: [4.4,3.2,5.4,2.1,5.4,1.9,3.6],
             backgroundColor: [
-                'rgb(150, 99, 132)'],
+                '#424652'],
             hoverOffset: 4
         }]
     },
