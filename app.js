@@ -9,6 +9,7 @@ function Question(question, questionCategory, responseOptions, responseOptionSco
 
 // Function to display one question on webpage.
 function askQuestion(questionObject) {
+
     // Clear page.
     let mainEl = document.getElementsByTagName("main")[0];
     mainEl.innerText = "";
@@ -42,7 +43,7 @@ function askQuestion(questionObject) {
 }
 
 // Function to handle user response (click).
-// Records which response option the user selected.
+// Records which response option the user selected and asks the next question if there is a next question to be asked, otherwise shows results.
 function handleResponse(event) {
     let elementClicked = event.target; // returns the list element "<li>3</li>" that was clicked on
     
@@ -65,14 +66,18 @@ function handleResponse(event) {
     }
 }
 
+// Shows the next question on the page. Keeps track of the question that it asks in questionsAlreadyAsked.
 function askNextQuestion() {
+
     // Ask all the questions in questionObjects. Do not ask repeat questions.
     for (let i = 0; i < questionObjects.length; i++) {
+
         // if questoinObjects[i] is in questionsAlreadyAsked, go to next questionObject
         if (questionsAlreadyAsked.includes(questionObjects[i])) {
             // do nothing, go to next question.
+
+        // else ask the question and push it into the questions already asked array.
         } else {
-            // else ask the question and push it into the questions already asked array.
             questionsAlreadyAsked.push(questionObjects[i]); // Keep track of which questions the user has been asked.
             askQuestion(questionObjects[i]);
             break;
@@ -107,11 +112,7 @@ function getResults() {
         }
     }
 
-    console.log(questionCategories);
-    console.log(sumOfEachCategory);
     showResults(questionCategories, sumOfEachCategory)
-    // Goal is to get array of questionCategories.
-    // 2nd goal is to get array of scores for each question category (sumOfEachCategory).
 }
 
 // Displays results chart and mental health descriptions.
@@ -139,12 +140,14 @@ function showResults(x, y) {
         options: {
             scales: {
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    max: 100
                 }
             }
         }
     });
 
+    // Condition description information is stored in this object.
     let descriptionObjects = {
         conditions: ['Depression','Generalized Anxiety','Social Anxiety','ADHD','Gender Dysphoria','PTSD'],
         links: [
@@ -198,9 +201,6 @@ function showResults(x, y) {
     mainEl.appendChild(figureContainer);
 
 }
-
-
-
 
 // Question bank and associated arrays to build question objects out of.
 QuestionCategory = ['Depression','Depression','Depression','Generalized Anxiety','Generalized Anxiety','Social Anxiety','Social Anxiety','Social Anxiety','Social Anxiety','Social Anxiety','ADHD','ADHD','ADHD','ADHD','ADHD','ADHD','Gender Dysphoria','Gender Dysphoria','Gender Dysphoria','Gender Dysphoria','Gender Dysphoria','PTSD','PTSD','PTSD']
